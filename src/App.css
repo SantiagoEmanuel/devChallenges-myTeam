@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=PT+Serif:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+
+    .mainHeader {
+        display: flex;
+        justify-content: center;
+        align-items: top;
+        width:100%;
+        height: 100%;
+        margin-bottom: 90px;
+        margin-top: 50px;
+        /* border: 1px solid red; */
+
+        .mainHeader--title {
+            text-align: left;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            font-family: 'PT Serif', serif;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 48px;
+            letter-spacing: -0.045em;
+            /* text-align: left; */
+
+        }
+        .mainHeader--about {
+            width: 100%;
+            display: flex;
+            /* justify-content: center; */
+
+            .mainHeader--about_container {
+                width: 400px;
+                margin-left: 52px;
+
+                .about--title{
+                    font-family: 'Poppins';
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 27px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                }
+
+                .about--text {
+                    font-family: 'Poppins';
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 27px;
+                    letter-spacing: 0em;
+                    text-align: left;
+
+                }
+            }
+        }
+        /* border: 1px solid red; */
+    }
+
+    .mainSection {
+        display: grid;
+        grid-template-areas: 
+        'bill saba shae'
+        'skylah griff stan';
+        gap: 60px;
+        justify-content: center;
+
+        .cardContainer {
+            display: flex;
+
+            .img {
+
+                .imgImg {
+                    width: 238px;
+                    height: 347px;
+                }
+                .name {
+                    margin-top: 9px;
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 27px;
+                    letter-spacing: 0em;
+                    text-align: left;
+
+                }
+            }
+
+            .work {
+                writing-mode: vertical-lr;
+                font-family: 'PT Serif', serif;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 16px;
+                letter-spacing: 0em;
+                text-align: left;
+
+            }
+        }
+    }
+
+    .footerPage {
+        margin-top: 90px;
+        color: #A9A9A9;
+
+        .pFooter {
+            font-family: 'Montserrat';
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 17px;
+            letter-spacing: 0em;
+            text-align: center;
+
+            .username {
+                font-family: 'Montserrat';
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 17px;
+                letter-spacing: 0em;
+                text-align: center;
+            }
+
+            .aFooter {
+                font-family: 'Montserrat';
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 17px;
+                letter-spacing: 0em;
+                text-align: center;
+                text-decoration: none;
+                color: #A9A9A9
+            }
+
+        }
+    }
+}
+
+#bill{
+    grid-area: bill;
+}
+#saba{
+    margin-top: 90px;
+    grid-area: saba;
+}
+#skylah{
+    grid-area: skylah;
+}
+#griff{
+    margin-top: 80px;
+    grid-area: griff;
+}
+#shae{
+    grid-area: shae;
+}
+#stan{
+    grid-area: stan;
+}
+
+
+@media (width <= 1018px) {
+    .main {
+        .mainHeader {
+            flex-direction: column;;
+
+            .mainHeader--title {
+                justify-content: left;
+                margin-left: 20%;
+            }
+            .mainHeader--about {
+                display: flex;
+                justify-content: left; 
+
+                .mainHeader--about_container{
+                    margin-left: 20%;
+                }
+            }
+        }
+
+        .mainSection {
+            display: grid;
+            grid-template-areas: 
+            'bill saba'
+            'shae skylah'
+            'griff stan';
+            gap: 15px;
+
+            .cardContainer{
+                /* .img {
+                    .imgImg {
+                        width: 156px;
+                        height: 237px;
+                    }
+                } */
+            }
+        }
+    }
+
+    #skylah {
+        margin-top: 90px;
+    }
+    #stan {
+        margin-top: 90px;
+    }
+    #griff{
+        margin-top: 0;
+    }
+}
+
+@media (width <= 605px){
+    .main {
+
+        .mainHeader {
+            .mainHeader--title {
+                font-family: 'PT Serif';
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 48px;
+                letter-spacing: -0.045em;
+                text-align: left;
+                margin: 0;
+                padding-left: 23px;
+            }
+            .mainHeader--about {
+                .mainHeader--about_container {
+                    margin: 0;
+                    padding-left: 23px;
+                    width: 290px;
+
+                    .about--title {
+                        font-family: 'Poppins';
+                        font-size: 18px;
+                        font-weight: 600;
+                        line-height: 27px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        }
+                    .about--text {
+                        font-family: 'Poppins';
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 21px;
+                        letter-spacing: 0em;
+                        text-align: left;                        
+                    }
+                }
+            }
+        }
+
+        .mainSection {
+            .cardContainer {
+                .img {
+                    .imgImg{
+                        width: 140px;
+                        height: 221px;
+                    }
+                    .name {
+                        font-family: 'Poppins';
+                        font-size: 14px;
+                        font-weight: 600;
+                        line-height: 21px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                    }
+                }
+
+                .work {
+                    font-family: 'PT Serif';
+                    font-size: 10px;
+                    font-weight: 400;
+                    line-height: 13px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}

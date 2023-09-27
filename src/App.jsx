@@ -20,37 +20,37 @@ export default function App() {
         <Card
           id='bill'
           name='Bill Mahoney'
-          imgUrl='/photo1.png'
+          imgUrl='./photo1.png'
           work='PRODUCT MANAGER'
         />
         <Card
           id='saba'
           name='Saba Cabrera'
-          imgUrl='/photo2.png'
+          imgUrl='./photo2.png'
           work='ART DIRECTOR'
         />
         <Card
           id='shae'
           name='Shae Le'
-          imgUrl='/photo3.png'
+          imgUrl='./photo3.png'
           work='TECH LEAD'
         />
         <Card
           id='skylah'
           name='Skylah Lu'
-          imgUrl='/photo4.png'
+          imgUrl='./photo4.png'
           work='UX DESIGNER'
         />
         <Card
           id='griff'
           name='Grif Richards'
-          imgUrl='/photo5.png'
+          imgUrl='./photo5.png'
           work='DEVELOPER'
         />
         <Card
           id='stan'
           name='Stan John'
-          imgUrl='/photo6.png'
+          imgUrl='./photo6.png'
           work='DEVELOPER'
         />
       </section>
